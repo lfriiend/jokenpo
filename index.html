@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Jokenpo</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://i0.wp.com/heroisx.com/wp-content/uploads/2015/07/Jo-Ken-Po.jpg"
+        alt=""
+      />
+    </header>
+    <section class="container">
+      
+      <h2>Qual sua escolha?</h2>
+      <div class="flex">
+        <input type="radio" name="grupo" id="pedra" value="pedra" />
+        <label for="pedra">Pedra</label>
+      </div>
+
+      <div class="flex">
+        <input type="radio" name="grupo" id="papel" value="papel" />
+        <label for="papel">Papel</label>
+      </div>
+
+      <div class="flex">
+        <input type="radio" name="grupo" id="tesoura" value="tesoura" />
+        <label for="Tesoura">Tesoura</label>
+      </div>
+
+      <input type="button" onclick="jogar()" value="Jogar"></input>
+
+      <input type="button" onclick="reset()" value="Reset"></input>
+
+      <span id="pc">Máquina: </span>
+
+      <span id="placar">Placar: </span>
+    </section>
+  </body>
+  <script src="./script.js"></script>
+</html>
